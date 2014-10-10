@@ -1,0 +1,134 @@
+<html><head><title>Graphical represenation of simulation results</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="Rchm.css">
+</head>
+<body>
+
+<table width="100%"><tr><td>histsim(modtools)</td><td align="right">R Documentation</td></tr></table><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="keyword" value="R:   histsim">
+<param name="keyword" value=" Graphical represenation of simulation results">
+</object>
+
+
+<h2>Graphical represenation of simulation results</h2>
+
+
+<h3>Description</h3>
+
+<p>
+~~ A concise (1-5 lines) description of what the function does. ~~
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+histsim(sim, obs, nclass = 10, coeff = 1, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>sim</code></td>
+<td>
+~~Describe <code>sim</code> here~~ </td></tr>
+<tr valign="top"><td><code>obs</code></td>
+<td>
+~~Describe <code>obs</code> here~~ </td></tr>
+<tr valign="top"><td><code>nclass</code></td>
+<td>
+~~Describe <code>nclass</code> here~~ </td></tr>
+<tr valign="top"><td><code>coeff</code></td>
+<td>
+~~Describe <code>coeff</code> here~~ </td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+further graphical parameters passed to 'plot.histogram'</td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+~~ If necessary, more details than the description above ~~
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+~Describe the value returned
+If it is a LIST, use
+</p>
+<table summary="R argblock">
+<tr valign="top"><td><code>comp1 </code></td>
+<td>
+Description of 'comp1'</td></tr>
+<tr valign="top"><td><code>comp2 </code></td>
+<td>
+Description of 'comp2'</td></tr>
+</table>
+<p>
+
+...</p>
+
+<h3>Note</h3>
+
+<p>
+~~further notes~~
+</p>
+
+
+<h3>References</h3>
+
+<p>
+~put references to the literature/web site here ~
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+~~objects to See Also as <code><a onclick="findlink('utils', 'help.html')" style="text-decoration: underline; color: blue; cursor: hand">help</a></code>, ~~~
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+##---- Should be DIRECTLY executable !! ----
+##-- ==&gt;  Define data, use random,
+##--    or do  help(data=index)  for the standard data sets.
+
+## The function is currently defined as
+function (sim, obs, nclass = 10, coeff = 1, ...) 
+{
+    r0 &lt;- c(sim, obs)
+    h0 &lt;- hist(sim, plot = FALSE, nclass = nclass)
+    y0 &lt;- max(h0$counts)
+    l0 &lt;- max(sim) - min(sim)
+    w0 &lt;- l0/(log(length(sim), base = 2) + 1)
+    w0 &lt;- w0 * coeff
+    xlim0 &lt;- range(r0) + c(-w0, w0)
+    hist(sim, plot = TRUE, nclass = nclass, xlim = xlim0, col = grey(0.8), 
+        ...)
+    lines(c(obs, obs), c(y0/2, 0))
+    points(obs, y0/2, pch = 18, cex = 2)
+    invisible()
+  }
+</pre>
+
+<script Language="JScript">
+function findlink(pkg, fn) {
+var Y, link;
+Y = location.href.lastIndexOf("\\") + 1;
+link = location.href.substring(0, Y);
+link = link + "../../" + pkg + "/chtml/" + pkg + ".chm::/" + fn;
+location.href = link;
+}
+</script>
+
+
+<hr><div align="center">[Package <em>modtools</em> version 1.0-7 <a href="00Index.html">Index</a>]</div>
+
+</body></html>

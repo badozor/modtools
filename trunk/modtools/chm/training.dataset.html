@@ -1,0 +1,70 @@
+<html><head><title>building training and test dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="Rchm.css">
+</head>
+<body>
+
+<table width="100%"><tr><td>training.dataset(modtools)</td><td align="right">R Documentation</td></tr></table><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="keyword" value="R:   training.dataset">
+<param name="keyword" value=" building training and test dataset">
+</object>
+
+
+<h2>building training and test dataset</h2>
+
+
+<h3>Description</h3>
+
+<p>
+building training and test dataset
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+training.dataset(x, cluster = rep(1, length(x)), ratio = 1/4)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>cluster</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>ratio</code></td>
+<td>
+</td></tr>
+</table>
+
+<h3>Examples</h3>
+
+<pre>
+##---- Should be DIRECTLY executable !! ----
+##-- ==&gt;  Define data, use random,
+##--    or do  help(data=index)  for the standard data sets.
+
+## The function is currently defined as
+function (x, cluster = rep(1, length(x)), ratio = 1/4) 
+{
+    test &lt;- unlist(tapply(x, cluster, function(j) sample(j, round(length(j) * 
+        ratio))))
+    res &lt;- data.frame(x = x, test = x %in% test, training = !(x %in% 
+        test), cluster = cluster)
+    attr(res, "ratio") &lt;- ratio
+    attr(res, "N") &lt;- length(x)
+    attr(res, "Ntest") &lt;- sum(res$test)
+    attr(res, "Ntraining") &lt;- sum(res$training)
+    return(res)
+  }
+</pre>
+
+
+
+<hr><div align="center">[Package <em>modtools</em> version 1.0-7 <a href="00Index.html">Index</a>]</div>
+
+</body></html>

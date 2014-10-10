@@ -1,0 +1,96 @@
+<html><head><title>Model performance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="Rchm.css">
+</head>
+<body>
+
+<table width="100%"><tr><td>modperf(modtools)</td><td align="right">R Documentation</td></tr></table><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="keyword" value="R:   modperf">
+<param name="keyword" value="R:   modperf.cv">
+<param name="keyword" value="R:   modperf.boot">
+<param name="keyword" value="R:   modperf.lm">
+<param name="keyword" value="R:   modperf.glm">
+<param name="keyword" value="R:   modperf.binary">
+<param name="keyword" value="R:   modperf.default">
+<param name="keyword" value="R:   perfbinary">
+<param name="keyword" value=" Model performance">
+</object>
+
+
+<h2>Model performance</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Model performance
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+modperf(x, ...)
+modperf.boot(x, data, cost = costRMSE, R = 99, ...)
+modperf.cv(x, data, cost = costRMSE, K = 10, ...)
+modperf.binary(x,...)
+## Default S3 method:
+modperf(x, data, cost = costRMSE, R = 99, ...)
+## S3 method for class 'lm':
+modperf(x, ...)
+## S3 method for class 'glm':
+modperf(x, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>data</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>cost</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>R</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>K</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+</td></tr>
+</table>
+
+<h3>Note</h3>
+
+<p>
+The function 'modperf.binary' is based on the function 'perf.binary'.
+this function returns the following values: sensitivity,specificty,
+positive predictive value, negative predictive value and prevalence.<br>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+##---- Should be DIRECTLY executable !! ----
+##-- ==&gt;  Define data, use random,
+##--    or do  help(data=index)  for the standard data sets.
+
+## The function is currently defined as
+function (x, ...) 
+{
+    UseMethod("modperf")
+  }
+</pre>
+
+
+
+<hr><div align="center">[Package <em>modtools</em> version 1.0-7 <a href="00Index.html">Index</a>]</div>
+
+</body></html>

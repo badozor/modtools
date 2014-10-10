@@ -1,0 +1,21 @@
+`pseudoR2.glm` <-
+function (mod0, mod, option = "phi", ...) 
+{
+    if (!inherits(mod0, "glm")) 
+        stop("'glm' object expected !")
+    if (!inherits(mod, "glm")) 
+        stop("'glm' object expected !")
+    if (length(mod0$y) != length(mod$y)) 
+        stop("Non equal dimension!")
+    if (!all((mod0$y - mod$y) == 0)) 
+        stop("Non equal 'y'!")
+    if (mod0$family$family != mod$family$family) 
+        stop("Non equal family!")
+    nobs <- length(mod0$y)
+    if (option == "rho") 
+        res <- 1 - (logLik(mod)[1]/logLik(mod0)[1])
+    else if (option == "phi") 
+        res <- 1 - (logLik(mod)[1]/logLik(mod0)[1])^(-2 * logLik(mod0)[1]/nobs)
+    else stop("unknown option")
+    return(res)
+}

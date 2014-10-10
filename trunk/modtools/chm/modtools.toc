@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HEAD></HEAD><HTML><BODY>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package modtools:  Contents">
+<param name="Local" value="00Index.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package modtools:  R objects">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modtools-package">
+<param name="Local" value="modtools-package.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="anscresid">
+<param name="Local" value="anscresid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="auc">
+<param name="Local" value="auc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="bootcoef">
+<param name="Local" value="bootcoef.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="bootcoef.ci">
+<param name="Local" value="bootcoef.ci.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="bootvalid">
+<param name="Local" value="bootvalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="bootvalid.default">
+<param name="Local" value="bootvalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ckappa">
+<param name="Local" value="ckappa.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="cost">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costAVER">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costBIN">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costGoodCl">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costKappa">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costMAE">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costMSE">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costOri">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costR2">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costRMSE">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="costSlope">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="envelope.bin">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="fgoodclassif">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="fkappa">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="fSpecSens">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="fSpecSens2">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="goodclassif">
+<param name="Local" value="goodclassif.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="hist.boot">
+<param name="Local" value="hist.boot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="histsim">
+<param name="Local" value="histsim.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="intervals">
+<param name="Local" value="intervals.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="intervals.glm">
+<param name="Local" value="intervals.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="intervals.robclust">
+<param name="Local" value="intervals.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modperf">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modperf.binary">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modperf.boot">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modperf.cv">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modperf.default">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modperf.glm">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modperf.lm">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="modtools">
+<param name="Local" value="modtools-package.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="optimCut">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="perfbinary">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plot.roc">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plot.scorevalid">
+<param name="Local" value="scorevalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotBoot">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotCovPat">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotEtaRes">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotHalfnorm">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotLeverage">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotObsExp">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotObsExpCat">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotParRes">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotQQres">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="plotResDens">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="prep.roc">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="print.roc">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="print.scorevalid">
+<param name="Local" value="scorevalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="pseudoR2">
+<param name="Local" value="pseudoR2.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="pseudoR2.glm">
+<param name="Local" value="pseudoR2.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="roc">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ROCcoordinate">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="scorevalid">
+<param name="Local" value="scorevalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="scorevalid.default">
+<param name="Local" value="scorevalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="sefit">
+<param name="Local" value="sefit.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="sefit.glm">
+<param name="Local" value="sefit.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="SRM">
+<param name="Local" value="SRM.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="summary.bootcorrected">
+<param name="Local" value="bootvalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="summary.roc">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="training.dataset">
+<param name="Local" value="training.dataset.html">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Package modtools:  Titles">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Additional tools for model diagnostic and selection">
+<param name="Local" value="modtools-package.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Anscombe's Residuals">
+<param name="Local" value="anscresid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Area Under Curves">
+<param name="Local" value="auc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="building training and test dataset">
+<param name="Local" value="training.dataset.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="confidence and prediction/tolerance intervals for glm">
+<param name="Local" value="intervals.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Cost functions">
+<param name="Local" value="cost.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Good classification">
+<param name="Local" value="goodclassif.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Graphical represenation of simulation results">
+<param name="Local" value="histsim.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Graphical representation of object 'boot'">
+<param name="Local" value="hist.boot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Kappa's index">
+<param name="Local" value="ckappa.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Model performance">
+<param name="Local" value="modperf.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Performance curves">
+<param name="Local" value="scorevalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Plot Diagnostics for glm and lm Objects">
+<param name="Local" value="modplot.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Pseudo-R2 for object 'glm'">
+<param name="Local" value="pseudoR2.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="ROC functions">
+<param name="Local" value="roc.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Standard error of prediction (or fitted values) from glm">
+<param name="Local" value="sefit.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Structural Risk Minimization">
+<param name="Local" value="SRM.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="Validation procedure based on bootstrap for object from 'glm' or 'lm'.">
+<param name="Local" value="bootvalid.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+<param name="Name" value="~~function to do ... ~~">
+<param name="Local" value="bootcoef.html">
+</OBJECT>
+</UL>
+</UL>
+</BODY></HTML>

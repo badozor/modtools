@@ -1,0 +1,139 @@
+<html><head><title>Performance curves</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="Rchm.css">
+</head>
+<body>
+
+<table width="100%"><tr><td>scorevalid(modtools)</td><td align="right">R Documentation</td></tr></table><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="keyword" value="R:   scorevalid">
+<param name="keyword" value="R:   scorevalid.default">
+<param name="keyword" value="R:   print.scorevalid">
+<param name="keyword" value="R:   plot.scorevalid">
+<param name="keyword" value=" Performance curves">
+</object>
+
+
+<h2>Performance curves</h2>
+
+
+<h3>Description</h3>
+
+<p>
+~~ A concise (1-5 lines) description of what the function does. ~~
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+scorevalid(y, score, ...)
+## Default S3 method:
+scorevalid(y, score, recal = FALSE,
+  qth=seq(0, 1, length = 10),tol=1e-04,...)
+## S3 method for class 'scorevalid':
+print(x,digits = getOption("digits"),...)
+## S3 method for class 'scorevalid':
+plot(x,mgraph = NULL,...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>y</code></td>
+<td>
+~~Describe <code>y</code> here~~ </td></tr>
+<tr valign="top"><td><code>score</code></td>
+<td>
+~~Describe <code>score</code> here~~ </td></tr>
+<tr valign="top"><td><code>recal</code></td>
+<td>
+~~Describe <code>recal</code> here~~ </td></tr>
+<tr valign="top"><td><code>x</code></td>
+<td>
+~~Describe <code>x</code> here~~ </td></tr>
+<tr valign="top"><td><code>tol</code></td>
+<td>
+1e-04</td></tr>
+<tr valign="top"><td><code>qth</code></td>
+<td>
+seq(0, 1, length = 10)</td></tr>
+<tr valign="top"><td><code>mgraph</code></td>
+<td>
+graphic organisation</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+~~Describe <code>...</code> here~~ </td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+~~ If necessary, more details than the description above ~~
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+~Describe the value returned
+If it is a LIST, use
+</p>
+<table summary="R argblock">
+<tr valign="top"><td><code>comp1 </code></td>
+<td>
+Description of 'comp1'</td></tr>
+<tr valign="top"><td><code>comp2 </code></td>
+<td>
+Description of 'comp2'</td></tr>
+</table>
+<p>
+
+...</p>
+
+<h3>Note</h3>
+
+<p>
+The functions is based on R code of the excellent document
+proposed by Pierre-André Cornillon (see the section 'references').
+for more details, you can consult the following links:<br>
+http://www.uhb.fr/sc_sociales/labstats/PAC/doc/score.pdf<br>
+http://www.uhb.fr/sc_sociales/labstats/PAC/<br>
+</p>
+
+
+<h3>References</h3>
+
+<p>
+bardos (2001)<br>
+Cornillon P-A (200x) Discrimination et Scores, MASS course - Rennes 2:<br>
+http://www.uhb.fr/sc_sociales/labstats/PAC/doc/score.pdf<br>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="roc.html">roc</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+##---- Should be DIRECTLY executable !! ----
+##-- ==&gt;  Define data, use random,
+##--    or do  help(data=index)  for the standard data sets.
+
+## The function is currently defined as
+function (y, score, ...) 
+{
+    UseMethod("scorevalid")
+  }
+</pre>
+
+
+
+<hr><div align="center">[Package <em>modtools</em> version 1.0-7 <a href="00Index.html">Index</a>]</div>
+
+</body></html>

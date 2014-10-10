@@ -1,0 +1,42 @@
+== Motivation ==
+
+functions dedicated to model assessments
+
+
+
+== bootstrap Functions ==
+
+ * bootcoef
+
+
+ * bootvalid (raw version)
+
+
+ * bootvalid with bias correction
+
+
+
+== Examples ==
+
+{{{
+glm1 <- 
+# coefficients 
+b1 <- bootcoef(glm1,R=99)
+bootcoef.ci(b1)
+hist(b1)
+# validation without bias correction
+b2 <- bootvalid(glm1,R=99,method="raw")
+b2
+hist(b2)
+# validation with bias correction
+b3 <- bootvalid(glm1,R=99,method="corrected")
+b3
+hist(b3)
+summary(b3)
+}}}
+
+== References ==
+ * Davidson A.C. & Hinkley D.V. (1997) Standard deviation from the multivariate delta method. Booststrad Methods and Their Application, 45-46.
+ * Efron, B. and Tibshirani, R. (1993) An Introduction to the Bootstrap. Chapman & Hall.
+ * Harrell FE (2001)  Regression Modeling Strategies With Applications to Linear Models, Logistic Regression, and Survival Analysis . New York: Springer. 
+ * R Development Core Team (2008) R: A language and environment for statistical computing. In R Foundation for Statistical Computing. Vienna, Austria.

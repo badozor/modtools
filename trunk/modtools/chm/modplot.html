@@ -1,0 +1,157 @@
+<html><head><title>Plot Diagnostics for glm and lm Objects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="Rchm.css">
+</head>
+<body>
+
+<table width="100%"><tr><td>modplot(modtools)</td><td align="right">R Documentation</td></tr></table><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="keyword" value="R:   plotBoot">
+<param name="keyword" value="R:   plotCovPat">
+<param name="keyword" value="R:   plotEtaRes">
+<param name="keyword" value="R:   plotHalfnorm">
+<param name="keyword" value="R:   plotLeverage">
+<param name="keyword" value="R:   plotObsExp">
+<param name="keyword" value="R:   plotObsExpCat">
+<param name="keyword" value="R:   plotParRes">
+<param name="keyword" value="R:   plotQQres">
+<param name="keyword" value="R:   plotResDens">
+<param name="keyword" value="R:   envelope.bin">
+<param name="keyword" value=" Plot Diagnostics for glm and lm Objects">
+</object>
+
+
+<h2>Plot Diagnostics for glm and lm Objects</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Ten plots are currently available for model assessment:
+Observed vs Expected values, Normal QQ-plot of residuals,etc...
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+#
+plotBoot(object,cost=costBIN,R=200,nclass=13,
+sub=paste("Bootstrap (R=",R,")",sep=""),plot=TRUE,...)
+#
+plotCovPat(object,sub="DX2 and Dbeta",plot=TRUE,...)
+#
+plotEtaResfunction(object,type="pearson",sub="Residual structure")
+#
+plotHalfnorm(object,sub="Half-normal plot",type="deviance",env=TRUE,...)
+#
+plotLeverage(object,type="pearson",sub="Leverage",cex=1.5,pch=20,...)
+#
+lotObsExp(object,sub="Expected vs observed values",...)
+plotObsExpCat(object,sub="Expected vs observed values",horizontal=TRUE,...)
+#
+plotParRes(object,mgraph=NULL,...)
+#
+plotQQres(object,type="pearson",sub="QQ-norm for residuals")
+#
+plotResDens(object,type="pearson",sub="Residuals histogram",nclass=13,...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>object</code></td>
+<td>
+an object of class inheriting from 'lm' or glm</td></tr>
+<tr valign="top"><td><code>cost</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>R</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>nclass</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>plot</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>sub</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>cex</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>pch</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>horizontal</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>mgraph</code></td>
+<td>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+further arguments passed to or from other methods.</td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+The selected plots are drawn on a graphics device.<br>
+plotBoot<br>
+plotCovPat<br>
+lotEtaRes<br>
+plotHalfnorm<br>
+plotLeverage<br>
+plotObsExp: Observed vs Expected values<br>
+plotObsExpCat: Observed vs Expected values<br>
+plotParRes<br>
+plotQQres: Normal QQ-plot of residuals<br>
+plotResDens<br>
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+x is invisibly returned.</p>
+
+<h3>References</h3>
+
+<p>
+ted<br>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a onclick="findlink('stats', 'qqnorm.html')" style="text-decoration: underline; color: blue; cursor: hand">qqnorm</a></code>,
+<code><a onclick="findlink('stats', 'plot.glm.html')" style="text-decoration: underline; color: blue; cursor: hand">plot.glm</a></code>, <code><a onclick="findlink('stats', 'plot.lm.html')" style="text-decoration: underline; color: blue; cursor: hand">plot.lm</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+### plot
+</pre>
+
+<script Language="JScript">
+function findlink(pkg, fn) {
+var Y, link;
+Y = location.href.lastIndexOf("\\") + 1;
+link = location.href.substring(0, Y);
+link = link + "../../" + pkg + "/chtml/" + pkg + ".chm::/" + fn;
+location.href = link;
+}
+</script>
+
+
+<hr><div align="center">[Package <em>modtools</em> version 1.0-7 <a href="00Index.html">Index</a>]</div>
+
+</body></html>

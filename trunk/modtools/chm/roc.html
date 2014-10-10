@@ -1,0 +1,168 @@
+<html><head><title>ROC functions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="Rchm.css">
+</head>
+<body>
+
+<table width="100%"><tr><td>roc(modtools)</td><td align="right">R Documentation</td></tr></table><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+<param name="keyword" value="R:   roc">
+<param name="keyword" value="R:   prep.roc">
+<param name="keyword" value="R:   plot.roc">
+<param name="keyword" value="R:   print.roc">
+<param name="keyword" value="R:   summary.roc">
+<param name="keyword" value="R:   ROCcoordinate">
+<param name="keyword" value="R:   optimCut">
+<param name="keyword" value="R:   fgoodclassif">
+<param name="keyword" value="R:   fkappa">
+<param name="keyword" value="R:   fSpecSens">
+<param name="keyword" value="R:   fSpecSens2">
+<param name="keyword" value=" ROC functions">
+</object>
+
+
+<h2>ROC functions</h2>
+
+
+<h3>Description</h3>
+
+<p>
+~~ A concise (1-5 lines) description of what the function does. ~~
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+prep.roc(obs,pred,nbval=20,method="max",subset,...)
+## S3 method for class 'roc':
+plot(x, type = "curve", sub,posi = c(0.8, 0.2),...)
+## S3 method for class 'roc':
+print(x, ...)
+## S3 method for class 'roc':
+summary(object, rnd = 3, type = "curve", display = TRUE, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>obs</code></td>
+<td>
+~~Describe <code>obs</code> here~~ </td></tr>
+<tr valign="top"><td><code>pred</code></td>
+<td>
+~~Describe <code>pred</code> here~~ </td></tr>
+<tr valign="top"><td><code>nbval</code></td>
+<td>
+~~Describe <code>nbval</code> here~~ </td></tr>
+<tr valign="top"><td><code>subset</code></td>
+<td>
+~~Describe <code>subset</code> here~~ </td></tr>
+<tr valign="top"><td><code>x</code></td>
+<td>
+~~Describe <code>x</code> here~~ </td></tr>
+<tr valign="top"><td><code>method</code></td>
+<td>
+~~Describe <code>method</code> here~~ </td></tr>
+<tr valign="top"><td><code>sub</code></td>
+<td>
+~~Describe <code>sub</code> here~~ </td></tr>
+<tr valign="top"><td><code>object</code></td>
+<td>
+~~Describe <code>object</code> here~~ </td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+~~Describe <code>method</code> here~~ </td></tr>
+<tr valign="top"><td><code>posi</code></td>
+<td>
+information position</td></tr>
+<tr valign="top"><td><code>rnd</code></td>
+<td>
+~~Describe <code>rnd</code> here~~ </td></tr>
+<tr valign="top"><td><code>display</code></td>
+<td>
+~~Describe <code>display</code> here~~ </td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+~~Describe <code>...</code> here~~ </td></tr>
+</table>
+
+<h3>Details</h3>
+
+<p>
+~~ If necessary, more details than the description above ~~
+</p>
+
+
+<h3>Value</h3>
+
+<p>
+~Describe the value returned
+If it is a LIST, use
+</p>
+<table summary="R argblock">
+<tr valign="top"><td><code>comp1 </code></td>
+<td>
+Description of 'comp1'</td></tr>
+<tr valign="top"><td><code>comp2 </code></td>
+<td>
+Description of 'comp2'</td></tr>
+</table>
+<p>
+
+...</p>
+
+<h3>Note</h3>
+
+<p>
+With the option 'estim', the function prep.roc used the function OptimCut to define the optimal cut-off.
+this one can be based on several criteria: <br>
+fgoodclassif:<br>
+fkappa<br>
+fSpecSens<br>
+fSpecSens2<br>
+</p>
+
+
+<h3>References</h3>
+
+<p>
+~put references to the literature/web site here ~
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+~~objects to See Also as <code><a onclick="findlink('utils', 'help.html')" style="text-decoration: underline; color: blue; cursor: hand">help</a></code>, ~~~
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+x &lt;- rnorm( 100 )
+z &lt;- rnorm( 100 )
+w &lt;- rnorm( 100 )
+tigol &lt;- function( x ) 1 - ( 1 + exp( x ) )^(-1)
+y &lt;- rbinom( 100, 1, tigol( 0.3 + 3*x + 5*z + 7*w ) )
+ROC( form = y ~ x + z, plot="ROC" )
+glm1 &lt;- glm(y ~ x + z,family=binomial)
+roc1 &lt;- prep.roc(glm1$y,glm1$fitted)
+plot(roc1)
+</pre>
+
+<script Language="JScript">
+function findlink(pkg, fn) {
+var Y, link;
+Y = location.href.lastIndexOf("\\") + 1;
+link = location.href.substring(0, Y);
+link = link + "../../" + pkg + "/chtml/" + pkg + ".chm::/" + fn;
+location.href = link;
+}
+</script>
+
+
+<hr><div align="center">[Package <em>modtools</em> version 1.0-7 <a href="00Index.html">Index</a>]</div>
+
+</body></html>

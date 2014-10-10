@@ -1,0 +1,102 @@
+* using log directory 'H:/DepotSVN/modtools/trunk/modtools.Rcheck'
+* using R version 2.9.0 (2009-04-17)
+* using session charset: ISO8859-1
+* checking for file 'modtools/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'modtools' version '1.0-7'
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking for .dll and .exe files ... OK
+* checking whether package 'modtools' can be installed ... OK
+* checking package directory ... OK
+* checking for portable file names ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking for unstated dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+plotResDens: no visible binding for global variable 'x'
+* checking Rd files ... WARNING
+Rd files with unknown encoding:
+  scorevalid.Rd
+  SRM.Rd
+
+See the chapter 'Writing R documentation files' in manual 'Writing R
+Extensions'.
+* checking Rd files against version 2 parser ... WARNING
+*** erreur dans le fichier ./man/modplot.Rd
+Error : ./man/modplot.Rd:47: Unrecognized macro \iter
+
+problem found in 'modplot.Rd'
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  perf.binary plotclass print.boot632 sim.intervals variogram.glm
+All user-level objects in a package should have documentation entries.
+See the chapter 'Writing R documentation files' in manual 'Writing R
+Extensions'.
+* checking for code/documentation mismatches ... WARNING
+Functions/methods with usage in documentation object 'modplot' but not in code:
+  plotEtaResfunction lotObsExp
+
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'modplot'
+  env
+Objects in \usage without \alias in documentation object 'modplot':
+  plotEtaResfunction lotObsExp
+
+Undocumented arguments in documentation object 'scorevalid'
+  digits
+
+Functions with \usage entries need to have the appropriate \alias entries,
+and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See the chapter 'Writing R documentation files' in manual 'Writing R
+Extensions'.
+S3 methods shown with full name in documentation object 'modperf':
+  modperf.boot modperf.cv modperf.binary
+
+The \usage entries for S3 methods should use the \method markup and not
+their full name.
+See the chapter 'Writing R documentation files' in manual 'Writing R
+Extensions'.
+* checking line endings in C/C++/Fortran sources/headers ... WARNING
+Found the following sources/headers with CR or CRLF line endings:
+  src/AUC.c
+  src/AUC.h
+Some Unix compilers require LF line endings.
+* checking line endings in Makefiles ... OK
+* checking for portable compilation flags in Makevars ... OK
+* checking for portable use of $BLAS_LIBS ... OK
+* checking examples ... ERROR
+Running examples in 'modtools-Ex.R' failed.
+The error most likely occurred in:
+
+> ### * roc
+> 
+> flush(stderr()); flush(stdout())
+> 
+> ### Name: roc
+> ### Title: ROC functions
+> ### Aliases: roc prep.roc plot.roc print.roc summary.roc ROCcoordinate
+> ###   optimCut fgoodclassif fkappa fSpecSens fSpecSens2
+> 
+> 
+> ### ** Examples
+> 
+> x <- rnorm( 100 )
+> z <- rnorm( 100 )
+> w <- rnorm( 100 )
+> tigol <- function( x ) 1 - ( 1 + exp( x ) )^(-1)
+> y <- rbinom( 100, 1, tigol( 0.3 + 3*x + 5*z + 7*w ) )
+> ROC( form = y ~ x + z, plot="ROC" )
+Erreur : impossible de trouver la fonction "ROC"
+Exécution arrêtée

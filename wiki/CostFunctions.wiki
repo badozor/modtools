@@ -1,0 +1,61 @@
+= Cost functions =
+
+The package 'modtools' contains cost functions which can be used in several functions (e.g. cv.glm, bootvalid,etc.). three functions are specifically dedicated to the binary data.
+
+== Arguments ==
+the cost functions are based on four arguments: 
+ * y is a numerical vector corresponding to the obsevred values.
+ * yhat is a numerical vector corresponding to the expected values.
+ * mu is a numerical vector corresponding to the expected values.
+ * cutoff is a numerical value in the range (0,1) corresponding to the threshold to transform the values 'mu' into binary vector. This last argument is only used for binary data.
+
+== Continuous data ==
+
+=== Functions ===
+
+{{{
+costAVER(y, yhat = 0)
+costMAE(y, yhat = 0)
+costMSE(y, yhat = 0)
+costRMSE(y, yhat = 0)
+costSlope(y, yhat)
+costOri(y, yhat)
+costR2(y, yhat)
+}}}
+
+=== Examples ===
+
+
+== Binary data ==
+
+=== Functions ===
+
+{{{
+costBIN(y, mu = 0, cutoff = 0.5)
+costKappa(y, yhat, cutoff = 0.5)
+costDA(y,yhat, cutoff = 0.5)
+}}}
+
+=== Examples ===
+
+== Categorical data ==
+
+=== Functions ===
+Two cost functions are proposed for the performance analysis with multi-category data:
+{{{
+costDA2 <- function(y,yhat)
+costKappa2 <- function(y,yhat,...)
+}}}
+Two additional cost functions are proposed for the performance analysis with posterior probabilities associated with multi-category data:
+{{{
+costEntropy <- function(x)
+costGini <- function(x)
+}}}
+
+=== Examples ===
+
+== References ==
+ * Davidson A.C. & Hinkley D.V. (1997) Standard deviation from the multivariate delta method. Booststrad Methods and Their Application, 45-46 (see http://statwww.epfl.ch/davison/BMA/).
+ * Efron, B. and Tibshirani, R. (1993) An Introduction to the Bootstrap. Chapman & Hall.
+ * Harrell FE (2001)  Regression Modeling Strategies With Applications to Linear Models, Logistic Regression, and Survival Analysis . New York: Springer.
+ * Faraway J.J. (2006) Extending Linear Models with R: Generalized Linear, Mixed Effects and Nonparametric Regression Models. Chapman & Hall/CRC.

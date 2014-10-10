@@ -1,0 +1,13 @@
+# binary Response
+
+
+=> logistique regression (family=binomial)
+
+# graphical functions
+plotCovPat
+plotHalfnorm
+
+
+# specific cost function
+costBin
+...
