@@ -1,0 +1,48 @@
+* installing *source* package 'modtools' ...
+** libs
+
+*** arch - i386
+cygwin warning:
+  MS-DOS style path detected: C:/programs/R/R-31~1.2/etc/i386/Makeconf
+  Preferred POSIX equivalent is: /cygdrive/c/programs/R/R-31~1.2/etc/i386/Makeconf
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+gcc -m32 -I"C:/programs/R/R-31~1.2/include" -DNDEBUG     -I"d:/RCompile/CRANpkg/extralibs64/local/include"     -O3 -Wall  -std=gnu99 -mtune=core2 -c AUC.c -o AUC.o
+gcc -m32 -shared -s -static-libgcc -o modtools.dll tmp.def AUC.o -LC:/programs/R/R-31~1.2/bin/i386 -lRlapack -LC:/programs/R/R-31~1.2/bin/i386 -lRblas -lgfortran -Ld:/RCompile/CRANpkg/extralibs64/local/lib/i386 -Ld:/RCompile/CRANpkg/extralibs64/local/lib -LC:/programs/R/R-31~1.2/bin/i386 -lR
+cygwin warning:
+  MS-DOS style path detected: C:/programs/R/R-31~1.2/etc/i386/Makeconf
+  Preferred POSIX equivalent is: /cygdrive/c/programs/R/R-31~1.2/etc/i386/Makeconf
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+installing to E:/works/GITprojects/modtools/trunk/modtools.Rcheck/modtools/libs/i386
+
+*** arch - x64
+cygwin warning:
+  MS-DOS style path detected: C:/programs/R/R-31~1.2/etc/x64/Makeconf
+  Preferred POSIX equivalent is: /cygdrive/c/programs/R/R-31~1.2/etc/x64/Makeconf
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+gcc -m64 -I"C:/programs/R/R-31~1.2/include" -DNDEBUG     -I"d:/RCompile/CRANpkg/extralibs64/local/include"     -O2 -Wall  -std=gnu99 -mtune=core2 -c AUC.c -o AUC.o
+gcc -m64 -shared -s -static-libgcc -o modtools.dll tmp.def AUC.o -LC:/programs/R/R-31~1.2/bin/x64 -lRlapack -LC:/programs/R/R-31~1.2/bin/x64 -lRblas -lgfortran -Ld:/RCompile/CRANpkg/extralibs64/local/lib/x64 -Ld:/RCompile/CRANpkg/extralibs64/local/lib -LC:/programs/R/R-31~1.2/bin/x64 -lR
+cygwin warning:
+  MS-DOS style path detected: C:/programs/R/R-31~1.2/etc/x64/Makeconf
+  Preferred POSIX equivalent is: /cygdrive/c/programs/R/R-31~1.2/etc/x64/Makeconf
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+installing to E:/works/GITprojects/modtools/trunk/modtools.Rcheck/modtools/libs/x64
+** R
+** preparing package for lazy loading
+Avis : package 'boot' was built under R version 3.1.3
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+*** arch - i386
+Avis : package 'boot' was built under R version 3.1.3
+*** arch - x64
+Avis : package 'boot' was built under R version 3.1.3
+* DONE (modtools)

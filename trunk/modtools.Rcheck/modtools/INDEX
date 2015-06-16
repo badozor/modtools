@@ -1,0 +1,24 @@
+SRM                     Structural Risk Minimization
+anscresid               Anscombe's Residuals
+auc                     Area Under Curves
+bootcoef                ~~function to do ... ~~
+bootcoef.ci             ~~function to do ... ~~
+bootvalid               Validation procedure based on bootstrap for
+                        object from 'glm' or 'lm'.
+ckappa                  Kappa's index
+cost                    Cost functions
+goodclassif             Good classification
+hist.boot               Graphical representation of object 'boot'
+histsim                 Graphical represenation of simulation results
+intervals               confidence and prediction/tolerance intervals
+                        for glm
+modperf                 Model performance
+modtools-package        Additional tools for model diagnostic and
+                        selection
+plotBoot                Plot Diagnostics for glm and lm Objects
+pseudoR2                Pseudo-R2 for object 'glm'
+roc                     ROC functions
+scorevalid              Performance curves
+sefit                   Standard error of prediction (or fitted values)
+                        from glm
+training.dataset        building training and test dataset

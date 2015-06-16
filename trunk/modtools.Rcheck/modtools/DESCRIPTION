@@ -1,0 +1,14 @@
+Package: modtools
+Type: Package
+Title: Additional tools for model diagnostic and selection
+Version: 1.0-9
+Date: 2014-09-09
+Author: Pierre BADY <pierre.bady@free.fr>
+Maintainer: Pierre BADY <pierre.bady@free.fr>
+Depends: R (>= 3.1.1), boot
+Suggests: car,epitools,epiR, haplo.ccs,faraway,MASS,irr
+Description: Additional tools for model diagnostic
+License: GPL version 2 or newer
+URL: http://pierre.bady@free.fr
+Built: R 3.1.2; x86_64-w64-mingw32; 2015-05-28 14:53:56 UTC; windows
+Archs: i386, x64

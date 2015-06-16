@@ -44,7 +44,7 @@ plotResDens(object,type="pearson",sub="Residuals histogram",nclass=13,...)
   \item{nclass}{}
   \item{plot}{}
   \item{sub}{}
-  \iter{env}{}
+  \item{env}{}
   \item{type}{}
   \item{cex}{}
   \item{pch}{}

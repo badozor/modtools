@@ -1,0 +1,363 @@
+* using log directory 'E:/works/GITprojects/modtools/trunk/modtools.Rcheck'
+* using R version 3.1.2 (2014-10-31)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: ISO8859-1
+* checking for file 'modtools/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'modtools' version '1.0-9'
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... NOTE
+Found the following apparent object files/libraries:
+  src-i386/AUC.o src-i386/modtools.dll src-x64/AUC.o
+  src-x64/modtools.dll
+Object files/libraries should not be included in a source package.
+* checking if there is a namespace ... OK
+* checking for executable files ... WARNING
+Found the following executable files:
+  src-i386/AUC.o
+  src-i386/modtools.dll
+  src-x64/modtools.dll
+Source packages should not contain undeclared executable files.
+See section 'Package structure' in the 'Writing R Extensions' manual.
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking whether package 'modtools' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Non-standard license specification:
+  GPL version 2 or newer
+Standardizable: TRUE
+Standardized license specification:
+  GPL (>= 2)
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* loading checks for arch 'i386'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* loading checks for arch 'x64'
+** checking whether the package can be loaded ... OK
+** checking whether the package can be loaded with stated dependencies ... OK
+** checking whether the package can be unloaded cleanly ... OK
+** checking whether the namespace can be loaded with stated dependencies ... OK
+** checking whether the namespace can be unloaded cleanly ... OK
+** checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+'library' or 'require' call to 'boot' which was already attached by Depends.
+  Please remove these calls from your code.
+Package in Depends field not imported from: 'boot'
+  These packages need to be imported from (in the NAMESPACE file)
+  for when this namespace is loaded but not attached.
+See the information on DESCRIPTION files in the chapter 'Creating R
+packages' of the 'Writing R Extensions' manual.
+* checking S3 generic/method consistency ... WARNING
+LRtest:
+  function(object, ...)
+LRtest.lmekin:
+  function(mod0, mod1, ...)
+
+LRtest:
+  function(object, ...)
+LRtest.negbin:
+  function(mod0, mod1, ...)
+
+dispersion:
+  function(x, ...)
+dispersion.glm:
+  function(object, ...)
+
+variogram:
+  function(object, ...)
+variogram.default:
+  function(x, dis, type, add.lowess, exp.adj, sub, breaks, xlim,
+           verbose, gammatol, add.sd, level, start, subset, ...)
+
+variogram:
+  function(object, ...)
+variogram.glm:
+  function(x, dis, type, add.lowess, exp.adj, sub, breaks, xlim,
+           verbose, gammatol, add.sd, level, start, subset, ...)
+
+mean:
+  function(x, ...)
+mean.rtest:
+  function(x, y, nrepet)
+
+t:
+  function(x)
+t.rtest:
+  function(x, y, nrepet, ...)
+
+median:
+  function(x, na.rm)
+median.rtest:
+  function(x, y, nrepet)
+
+update:
+  function(object, ...)
+update.dudi:
+  function(dudi, ..., evaluate)
+
+See section 'Generic functions and methods' of the 'Writing R
+Extensions' manual.
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+bootcoef: no visible global function definition for 'boot'
+bootvalid.coxph : fun1: no visible global function definition for
+  'survConcordance'
+bootvalid.coxph: no visible global function definition for 'boot'
+bootvalid.coxph: multiple local function definitions for 'fun1' with
+  different formal arguments
+bootvalid.default: no visible global function definition for 'boot'
+bootvalid.lda: no visible global function definition for 'boot'
+cor.rtest: no visible global function definition for 'as.rtest'
+costKappa2: no visible global function definition for 'kappa2'
+diffcor.rtest: no visible global function definition for 'as.rtest'
+mean.rtest: no visible global function definition for 'as.rtest'
+median.rtest: no visible global function definition for 'as.rtest'
+modperf.cv: no visible global function definition for 'cv.glm'
+modperf.default: no visible global function definition for 'cv.glm'
+permtest.lmekin: no visible binding for global variable 'varlist'
+permtest.lmekin: no visible global function definition for 'as.rtest'
+permtest.negbin: no visible global function definition for 'as.rtest'
+plotCovPat: warning in symbols(mu, rstd^2, dbeta, inch = 0.15, bg =
+  "gray", cex = 1.5, add = TRUE): correspondance partielle d'argument
+  de 'inch' par rapport à 'inches'
+plotHalfnorm: warning in qqplot(qnorm((ppoints(resid1) + 1)/2), resid1,
+  plot = FALSE): correspondance partielle d'argument de 'plot' par
+  rapport à 'plot.it'
+plotResDens: no visible binding for global variable 'x'
+plotclass: warning in matrix(0, nr = nd, nc = p): correspondance
+  partielle d'argument de 'nr' par rapport à 'nrow'
+plotclass: warning in matrix(0, nr = nd, nc = p): correspondance
+  partielle d'argument de 'nc' par rapport à 'ncol'
+t.rtest: no visible global function definition for 'as.rtest'
+* checking Rd files ... WARNING
+SRM.Rd: non-ASCII input and no declared encoding
+prepare_Rd: auc.Rd:17: Dropping empty section \seealso
+prepare_Rd: modperf.Rd:44-46: Dropping empty section \details
+prepare_Rd: modperf.Rd:47-53: Dropping empty section \value
+prepare_Rd: modperf.Rd:57-59: Dropping empty section \author
+prepare_Rd: modperf.Rd:54-56: Dropping empty section \references
+prepare_Rd: modperf.Rd:68-70: Dropping empty section \seealso
+scorevalid.Rd: non-ASCII input and no declared encoding
+prepare_Rd: training.dataset.Rd:23-25: Dropping empty section \details
+prepare_Rd: training.dataset.Rd:26-32: Dropping empty section \value
+prepare_Rd: training.dataset.Rd:39-41: Dropping empty section \note
+prepare_Rd: training.dataset.Rd:36-38: Dropping empty section \author
+prepare_Rd: training.dataset.Rd:33-35: Dropping empty section \references
+prepare_Rd: training.dataset.Rd:45-47: Dropping empty section \seealso
+problems found in 'SRM.Rd', 'scorevalid.Rd'
+* checking Rd metadata ... OK
+* checking Rd cross-references ... WARNING
+Missing link or links in documentation object 'modplot.Rd':
+  '[stats:plot.glm]{plot.glm}'
+
+Missing link or links in documentation object 'modtools-package.Rd':
+  '[boot:boot-package]{boot}'
+
+See the information in section 'Cross-references' of the 'Writing R
+Extensions' manual.
+
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  'LRtest' 'LRtest.lmekin' 'LRtest.negbin' 'add.roundsig' 'add.starsig'
+  'bootvalid.coxph' 'bootvalid.lda' 'coefplus' 'cor.rtest' 'costDA'
+  'costDA2' 'costEntropy' 'costGini' 'costKappa2' 'delete.intercept'
+  'delete.space' 'diffcor.rtest' 'dispersion' 'dispersion.glm'
+  'formula.lmekin' 'getVariance' 'getVariance.lmekin' 'gof.test'
+  'mean.rtest' 'median.rtest' 'perf.binary' 'permtest'
+  'permtest.lmekin' 'permtest.negbin' 'permtest2df' 'plotHat'
+  'plotclass' 'print.permtest' 'sim.intervals' 't.rtest' 'update.dudi'
+  'update.lmekin' 'variogram' 'variogram.default' 'variogram.glm'
+  'varnames' 'varnames.default'
+All user-level objects in a package should have documentation entries.
+See the chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking for code/documentation mismatches ... WARNING
+Functions or methods with usage in documentation object 'cost' but not in code:
+  costGoodCl
+
+Functions or methods with usage in documentation object 'modplot' but not in code:
+  plotEtaResfunction lotObsExp
+
+Codoc mismatches from documentation object 'modplot':
+plotQQres
+  Code: function(object, type = "pearson", sub = "QQ-norm for
+                 residuals", ...)
+  Docs: function(object, type = "pearson", sub = "QQ-norm for
+                 residuals")
+  Argument names in code not in docs:
+    ...
+
+Codoc mismatches from documentation object 'roc':
+prep.roc
+  Code: function(obs, pred, method = "max", subset, nbval = NULL,
+                 cutoff = NULL, ...)
+  Docs: function(obs, pred, nbval = 20, method = "max", subset, ...)
+  Argument names in code not in docs:
+    cutoff
+  Mismatches in argument names (first 3):
+    Position: 3 Code: method Docs: nbval
+    Position: 4 Code: subset Docs: method
+    Position: 5 Code: nbval Docs: subset
+  Mismatches in argument default values:
+    Name: 'nbval' Code: NULL Docs: 20
+plot.roc
+  Code: function(x, type = "curve", sub, posi = c(0.8, 0.2), lty = 1,
+                 lwd = 2, pch = 19, pt.cex = 1, lgd.cex = 0.9, ...)
+  Docs: function(x, type = "curve", sub, posi = c(0.8, 0.2), ...)
+  Argument names in code not in docs:
+    lty lwd pch pt.cex lgd.cex
+  Mismatches in argument names:
+    Position: 5 Code: lty Docs: ...
+
+* checking Rd \usage sections ... WARNING
+Objects in \usage without \alias in documentation object 'modplot':
+  'plotEtaResfunction' 'lotObsExp'
+
+Undocumented arguments in documentation object 'scorevalid'
+  'digits'
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See the chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+S3 methods shown with full name in documentation object 'modperf':
+  'modperf.boot' 'modperf.cv' 'modperf.binary'
+
+The \usage entries for S3 methods should use the \method markup and not
+their full name.
+See the chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking Rd contents ... WARNING
+Auto-generated content requiring editing in Rd object 'SRM':
+  \description
+  \arguments, description of item 'y'
+  \arguments, description of item 'yhat'
+  \arguments, description of item 'h'
+  \arguments, description of item 'cost'
+  \arguments, description of item 'alpha'
+
+Auto-generated content requiring editing in Rd object 'bootcoef':
+  \title
+  \description
+  \details
+  \arguments, description of item 'data'
+  \arguments, description of item 'R'
+  \arguments, description of item '\dots'
+
+Auto-generated content requiring editing in Rd object 'bootcoef.ci':
+  \title
+  \description
+  \details
+  \note
+  \arguments, description of item '\dots'
+
+Auto-generated content requiring editing in Rd object 'bootvalid':
+  \description
+  \details
+  \arguments, description of item 'data'
+  \arguments, description of item 'cost'
+  \arguments, description of item 'R'
+
+Auto-generated content requiring editing in Rd object 'ckappa':
+  \description
+  \details
+  \note
+
+Auto-generated content requiring editing in Rd object 'cost':
+  \description
+  \details
+
+Auto-generated content requiring editing in Rd object 'hist.boot':
+  \description
+  \details
+  \note
+  \arguments, description of item 'coeff'
+  \arguments, description of item 'mfrow'
+  \arguments, description of item 'which.par'
+  \arguments, description of item 'sub'
+
+Auto-generated content requiring editing in Rd object 'histsim':
+  \description
+  \details
+  \note
+  \arguments, description of item 'sim'
+  \arguments, description of item 'obs'
+  \arguments, description of item 'nclass'
+  \arguments, description of item 'coeff'
+
+Auto-generated content requiring editing in Rd object 'intervals':
+  \details
+
+Argument items with no description in Rd object 'modplot':
+  'cost' 'R' 'nclass' 'plot' 'sub' 'env' 'type' 'cex' 'pch'
+  'horizontal' 'mgraph'
+
+Auto-generated content requiring editing in Rd object 'pseudoR2':
+  \description
+  \details
+  \note
+  \arguments, description of item 'mod0'
+  \arguments, description of item 'mod'
+  \arguments, description of item 'option'
+  \arguments, description of item '\dots'
+
+Auto-generated content requiring editing in Rd object 'roc':
+  \description
+  \details
+  \arguments, description of item 'obs'
+  \arguments, description of item 'pred'
+  \arguments, description of item 'nbval'
+  \arguments, description of item 'subset'
+  \arguments, description of item 'x'
+  \arguments, description of item 'method'
+  \arguments, description of item 'sub'
+  \arguments, description of item 'object'
+  \arguments, description of item 'rnd'
+  \arguments, description of item 'display'
+  \arguments, description of item '\dots'
+
+Auto-generated content requiring editing in Rd object 'scorevalid':
+  \description
+  \details
+  \arguments, description of item 'y'
+  \arguments, description of item 'score'
+  \arguments, description of item 'recal'
+  \arguments, description of item 'x'
+  \arguments, description of item '\dots'
+
+Auto-generated content requiring editing in Rd object 'sefit':
+  \description
+  \details
+  \author
+
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... WARNING
+Found the following sources/headers with CR or CRLF line endings:
+  src/AUC.c
+  src/AUC.h
+Some Unix compilers require LF line endings.
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking compiled code ... OK
+* checking examples ...
+** running examples for arch 'i386' ... OK
+** running examples for arch 'x64' ... OK
+* checking PDF version of manual ... OK
+* DONE
+WARNING: There were 9 warnings.
+NOTE: There were 4 notes.

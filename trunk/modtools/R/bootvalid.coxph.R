@@ -4,7 +4,7 @@
 #------------------------------------------------------
 bootvalid.coxph <- function (object, data, R = 99, method = "raw",...) 
 {
-	require(survival)
+	#require(survival)
 	if (missing(data)) 
 		data <- object$data
 	switch(method, raw = 1, corrected = 2, stop("invalid 'method': ",method))
