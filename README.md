@@ -1,6 +1,6 @@
 <img src="logo/modtools_hex.png" align="right" width="130" alt="modtools logo"/>
 
-## Description: ##
+## R package modtools ##
 This package contains additional tools to assess model from 'glm' or 'lm' functions:
 bootstrap procedures based on the function 'boot', graphical representations, cost functions (e.g. RMSE, MAE,AVER,...), another functions related to ROC curves.
 
